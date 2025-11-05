@@ -13,7 +13,7 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-@HiltViewModel
+@HiltViewModel // integrates Hilt with the ViewModel lifecycle, Connects Hilt’s DI with ViewModel’s lifecycle automatically
 class ProductViewModel @Inject constructor(
     private val getProductsUseCase: GetProductsUseCase,
     private val refreshProductsUseCase: RefreshProductsUseCase

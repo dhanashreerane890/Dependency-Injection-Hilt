@@ -10,12 +10,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 
-@Module
-@InstallIn(SingletonComponent::class)
+@Module // provides dependencies manually.
+@InstallIn(SingletonComponent::class) //how long your provided dependencies will live
 object NetworkModule {
 
-    @Provides
-    @Singleton
+    @Provides // tells hilt how to create a dependency manually.
+    @Singleton // ensures a single instance throughout the app's lifecycle.
     fun provideProductApiService(): ProductApiService {
         return Retrofit.Builder()
             .baseUrl("https://dummyjson.com/")

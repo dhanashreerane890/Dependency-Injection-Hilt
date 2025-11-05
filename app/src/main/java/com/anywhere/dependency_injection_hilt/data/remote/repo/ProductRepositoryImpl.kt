@@ -15,6 +15,7 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
+//tells hilt how to create and provide an instance of a class automatically
 @Singleton
 class ProductRepositoryImpl @Inject constructor(
     private val api: ProductApiService,
