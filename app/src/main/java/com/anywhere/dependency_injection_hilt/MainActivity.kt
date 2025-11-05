@@ -10,7 +10,7 @@ import com.anywhere.dependency_injection_hilt.presentation.ui.ProductScreen
 import com.anywhere.dependency_injection_hilt.presentation.ui.theme.DependencyInjectionHiltTheme
 import dagger.hilt.android.AndroidEntryPoint
 
-//Hilt generates code, injects dependencies automatically before onCreate()
+//tells Hilt to generates code automatically,injects dependencies before onCreate()
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
